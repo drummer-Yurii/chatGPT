@@ -6,7 +6,7 @@ import { openai } from '../index.js';
 dotenv.config();
 const router = exppress.Router();
 
-router.post("/text", async (teq, res) => {
+router.post("/text", async (req, res) => {
     try {
         const { text, activeChatId } = req.body;
         console.log('text', text);
